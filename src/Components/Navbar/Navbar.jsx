@@ -6,7 +6,7 @@ const Navbar = () => {
           <p>Logo</p>
           <img src="" alt="" />
         </div>
-        <div className="bg-[#E14842] p-3 rounded-full text-white cursor-pointer shadow-3xl border border-solid border-[#ffefc969]">
+        <div className="bg-[#E14842] p-3 rounded-full text-white cursor-pointer">
           <button>Contact me</button>
         </div>
       </div>
