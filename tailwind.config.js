@@ -2,7 +2,14 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-bg': "url('/src/Components/assets/gradient-bg.jpeg')",
+      },
+      fontFamily: {
+        reyka: ['Reyka FREE', 'sans-serif'] 
+      },
+    },
   },
   plugins: [],
 }

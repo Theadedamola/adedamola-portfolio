@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: 'Reyka FREE';
+    src:
+      url('../src/Components/assets/Reyka\ FREE.otf')
+        format('opentype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+  }
+}
