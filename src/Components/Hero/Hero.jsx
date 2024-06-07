@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom'
+import { skillIcon } from '../assets/skillData'
+import Skills from '../Skills/Skills'
+import Marquee from 'react-fast-marquee'
 
 const Hero = () => {
   return (
@@ -12,7 +15,7 @@ const Hero = () => {
           <h1 className="text-5xl font-reyka text-white">About.</h1>
         </Link>
       </div>
-      <div className="z-40 relative mt-[100px] flex flex-col items-center space-y-4">
+      <div className="z-40 relative mt-[50px] flex flex-col items-center space-y-4">
         <h1 className="text-7xl font-reyka text-white">Adedamola Alausa</h1>
         <h1 className="text-7xl font-reyka text-white">UX Engineer</h1>
         <p className="text-white">
@@ -25,6 +28,18 @@ const Hero = () => {
         >
           <button>View my work</button>
         </Link>
+        <Marquee
+          pauseOnHover
+          style={{ width: '50%', marginTop: '50px' }}
+          className="bg-black bg-opacity-25 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]"
+        >
+          <div className="flex space-x-10 px-6 py-10 ">
+            {skillIcon.map((item, i) => {
+              const { image, id } = item
+              return <Skills key={id} image={image} />
+            })}
+          </div>
+        </Marquee>
       </div>
     </div>
   )
