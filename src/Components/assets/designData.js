@@ -10,6 +10,6 @@ export let designData = [
     {
         id: 2,
         thumbnail: thumbnail2,
-        name: 'Shield: A design solution for a Traditional bank',
+        name: 'Nodefi: Opt in notification for dApps',
     },
 ]
