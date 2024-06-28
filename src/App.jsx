@@ -6,8 +6,8 @@ import LandingPage from './Pages/LandingPage'
 import About from './Pages/About'
 import Design from './Pages/Design'
 import FrontendDetails from './Components/FrontendDetails/FrontendDetails'
-import DesignDetails from './Components/DesignDetails/DesignDetails'
 import Frontend from './Pages/frontend'
+import Casestudy from './Pages/Casestudy'
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/design" element={<Design />}>
-          <Route path=":designdetails" element={<DesignDetails />} />
+          <Route path=":designdetails" element={<Casestudy />} />
         </Route>
         <Route path="/frontend" element={<Frontend />}>
           <Route path=":frontenddetails" element={<FrontendDetails />} />
