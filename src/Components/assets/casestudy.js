@@ -20,10 +20,10 @@ export let caseStudy = [
     subtext:
       'Shield, a financial service provider, aims to redesign its digital wallet proposition to cater to a diverse range of clients, including Odogwu’s, Gen-A & Z, artisans, and market women. The current challenge lies in simplifying the onboarding process while allowing for seamless upgrading of wallet tiers. Additionally, Shield seeks to promote savings among its customers by enabling easy target setting, simplified saving mechanisms, and rewarding saving behaviors. Furthermore, the organization aims to address the issue of profile inactivity by ensuring customers can reactivate their profiles effortlessly when needed.',
     heading1: 'Process',
-    subheading1: 'THE PROBLEM',
+    subheading1: 'The Problem',
     content1:
       'Shield, a financial service provider, aims to redesign its digital wallet proposition to cater to a diverse range of clients, including Odogwu’s, Gen-A & Z, artisans, and market women. The current challenge lies in simplifying the onboarding process while allowing for seamless upgrading of wallet tiers. Additionally, Shield seeks to promote savings among its customers by enabling easy target setting, simplified saving mechanisms, and rewarding saving behaviors. Furthermore, the organization aims to address the issue of profile inactivity by ensuring customers can reactivate their profiles effortlessly when needed.',
-    subheading2: 'GOALS',
+    subheading2: 'Goals',
     content2:
       'Simplify Onboarding: Design an intuitive and user-friendly onboarding process that caters to a wide range of clients, from Odogwu’s to Gen-A & Z, artisans, and market women. Ensure that the onboarding process is straightforward, seamless, and accessible to all demographics. Flexible Wallet Tiers: Create a digital wallet proposition that allows for easy upgrading of wallet tiers. Implement a system that enables users to upgrade their wallet tiers on the go, based on their financial needs and preferences. Promote Savings: Develop features within the digital wallet that encourage savings behavior among customers. Enable users to set savings targets easily, implement simplified saving mechanisms, and reward customers for reaching their savings goals. Profile Reactivation: Address the issue of profile inactivity by designing a system that allows customers to reactivate their profiles effortlessly. Ensure that customers can resume using their digital wallets without any hassle if their profiles become inactive. Enhance User Experience: Overall, the project aims to enhance the user experience of Shields digital wallet proposition. This includes improving usability, accessibility, and functionality to ensure a positive and engaging experience for all users across different demographics.',
     heading2: 'Solution',
@@ -50,7 +50,7 @@ export let caseStudy = [
     subheading8: 'Conclusion',
     content8:
       'The redesign and implementation of Shields digital wallet proposition achieved the goals of simplifying onboarding, enabling flexible wallet tiers, promoting savings behaviors, addressing profile inactivity, and enhancing user experience. This comprehensive approach has led to increased customer satisfaction, engagement, and retention, showcasing Shields commitment to innovative and customer-centric financial services.',
-    subheading9: 'Conclusion',
+    subheading9: 'Next step',
     content9:
       'More Usability studies to be carried out and more features to be implemented such as the virtual card feature.',
   },
@@ -90,7 +90,7 @@ export let caseStudy = [
     subheading8: 'Conclusion',
     content8:
       'The redesign and implementation of Shields digital wallet proposition achieved the goals of simplifying onboarding, enabling flexible wallet tiers, promoting savings behaviors, addressing profile inactivity, and enhancing user experience. This comprehensive approach has led to increased customer satisfaction, engagement, and retention, showcasing Shields commitment to innovative and customer-centric financial services.',
-    subheading9: 'Conclusion',
+    subheading9: 'Next step',
     content9:
       'More Usability studies to be carried out and more features to be implemented such as the virtual card feature.',
   },

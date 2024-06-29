@@ -17,6 +17,8 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/design" element={<Design />}>
+        </Route>
+        <Route path="/design" element={<Casestudy />}>
           <Route path=":designdetails" element={<Casestudy />} />
         </Route>
         <Route path="/frontend" element={<Frontend />}>
