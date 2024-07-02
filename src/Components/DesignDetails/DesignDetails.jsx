@@ -1,8 +1,15 @@
+import { useEffect, useState } from 'react'
+
 const DesignDetails = ({ design }) => {
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    setIsVisible(true)
+  }, [])
   return (
     <div>
       <div className="relative w-full h-screen px-6 md:px-16 flex flex-col items-center pt-[130px]">
-        <div className="z-10 absolute left-0 top-0 w-full h-screen bg-black bg-opacity-20 backdrop-blur-xl"></div>
+        <div className="z-10 absolute left-0 top-0 w-full h-screen bg-black bg-opacity-35 backdrop-blur-xl"></div>
         <div className="">
           <img
             className="z-11 absolute left-0 top-0 w-full h-screen"
@@ -11,8 +18,24 @@ const DesignDetails = ({ design }) => {
           />
         </div>
         <div className="z-40 relative my-auto flex flex-col space-y-6">
-          <h1 className="text-white text-[42px] sm:text-7xl font-reyka">{design.name}</h1>
-          <p className="text-white text-xl">{design.subtext}</p>
+          <h1
+            className={`text-white text-[42px] sm:text-7xl font-reyka transition-all transform duration-1000 delay-200 ${
+              isVisible
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-[30px]'
+            }`}
+          >
+            {design.name}
+          </h1>
+          <p
+            className={`text-white text-xl transition-all transform duration-1000 delay-200 ${
+              isVisible
+                ? 'opacity-100  translate-y-0'
+                : 'opacity-0 translate-y-[30px]'
+            }`}
+          >
+            {design.subtext}
+          </p>
         </div>
       </div>
       <div className="p-6 md:p-16 flex flex-col space-y-6">

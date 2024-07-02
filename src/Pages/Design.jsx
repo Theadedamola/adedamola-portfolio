@@ -10,20 +10,16 @@ const Design = () => {
 
   const handlePrevClick = () => {
     setDirection('left')
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? designData.length - 1 : prevIndex - 1
-      )
-    }, 0)
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? designData.length - 1 : prevIndex - 1
+    )
   }
 
   const handleNextClick = () => {
     setDirection('right')
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === designData.length - 1 ? 0 : prevIndex + 1
-      )
-    }, 0)
+    setCurrentIndex((prevIndex) =>
+      prevIndex === designData.length - 1 ? 0 : prevIndex + 1
+    )
   }
 
   const currentWork = designData[currentIndex]
