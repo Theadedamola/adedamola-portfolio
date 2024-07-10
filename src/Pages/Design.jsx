@@ -1,15 +1,22 @@
 import { Link } from 'react-router-dom'
 import { Context } from '../Context/Context'
-import { useContext, useState } from 'react'
+import { useContext, useState, useEffect } from 'react'
 import arrow_right from '../Components/assets/arrow-right.svg'
 
 const Design = () => {
   const { designData, caseStudy } = useContext(Context)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [direction, setDirection] = useState('')
+  const [animate, setAnimate] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    setIsVisible(true)
+  }, [])
 
   const handlePrevClick = () => {
     setDirection('left')
+    setAnimate(false)
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? designData.length - 1 : prevIndex - 1
     )
@@ -17,6 +24,7 @@ const Design = () => {
 
   const handleNextClick = () => {
     setDirection('right')
+    setAnimate(false)
     setCurrentIndex((prevIndex) =>
       prevIndex === designData.length - 1 ? 0 : prevIndex + 1
     )
@@ -48,15 +56,29 @@ const Design = () => {
       </div>
       <Link to={`/design/${currentWork.name}`} className="mt-14 lg:mt-8">
         <img
-          className="z-40 relative w-[320px] h-[265px] md:w-[350px] md:h-[285px] rounded-3xl"
+          className={`z-40 relative w-[320px] h-[265px] md:w-[350px] md:h-[285px] rounded-3xl transform duration-1000 delay-200 ${
+            isVisible ? 'opacity-100 scale-90' : 'opacity-0 scale-100'
+          } transform ${
+            animate
+              ? direction === 'left'
+                ? 'animate-slide-in-left'
+                : 'animate-slide-in-right'
+              : ''
+          }`}
           src={currentWork.thumbnail}
           alt=""
         />
       </Link>
       <div className="z-40 relative mt-6 px-7 py-2 md:px-10 md:py-6 flex flex-col items-center space-y-6 bg-black bg-opacity-25 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]">
-        <h1 className="text-white text-xl md:text-2xl w-[300px] md:w-[400px] h-[50px] text-center">
-          {currentWork.name}
-        </h1>
+        <Link to={`/design/${currentWork.name}`}>
+          <h1
+            className={`text-white text-xl md:text-2xl w-[300px] md:w-[400px] h-[50px] text-center delay-300 ${
+              isVisible ? 'opacity-100 scale-90' : 'opacity-0 scale-100'
+            }`}
+          >
+            {currentWork.name}
+          </h1>
+        </Link>
         <div className="flex space-x-4">
           <button
             onClick={handlePrevClick}
