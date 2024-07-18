@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Footer from '../Footer/Footer'
 
 const DesignDetails = ({ design }) => {
   const [isVisible, setIsVisible] = useState(false)
@@ -69,6 +70,7 @@ const DesignDetails = ({ design }) => {
         <p className="uppercase font-bold">{design.subheading9}</p>
         <p className="text-[#4F4F4F]">{design.content9}</p>
       </div>
+      <Footer />
     </div>
   )
 }
